@@ -1,21 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+
+import symbols from './symbols.svg';
+import react from './react.svg';
+
+import { init, setClass } from '@symbo.ls/init'
+init()
+
+const props = {
+  maxWidth: 'J2',
+  width: '100%',
+  margin: '0 auto',
+
+  header: {
+    display: 'flex',
+    padding: 'A B',
+    flexAlign: 'center space-between'
+  },
+
+  logo: {
+    boxSize: 'B1'
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+    <div className={setClass(props)}>
+      <header className={setClass(props.header)}>
+        <a
+          href="https://docs.symbols.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={symbols} className={setClass(props.logo)} alt="Symbols logo" />
+        </a>
+        <p className={setClass(props.paragraph)}>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <img src={react} className={setClass(props.logo)} alt="React logo" />
         </a>
       </header>
     </div>
