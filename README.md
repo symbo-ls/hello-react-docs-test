@@ -1,3 +1,3 @@
-# Getting Started with Symbols on React
+# Symbols on React
 
-Read more at [Create React App](https://docs.symbols.app/intro#starter-kit).
+Read more at [Symbols docs](https://docs.symbols.app/intro#starter-kit).
