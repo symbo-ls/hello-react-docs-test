@@ -5,23 +5,23 @@ import react from './react.svg';
 import { init, setClass } from '@symbo.ls/init'
 init()
 
-const props = {
-  maxWidth: 'J2',
-  width: '100%',
-  margin: '0 auto',
-
-  header: {
-    display: 'flex',
-    padding: 'A B',
-    flexAlign: 'center space-between'
-  },
-
-  logo: {
-    boxSize: 'B1'
-  }
-}
-
 function App() {
+  const props = {
+    maxWidth: 'J2',
+    width: '100%',
+    margin: '0 auto',
+
+    header: {
+      display: 'flex',
+      padding: 'A B',
+      flexAlign: 'center space-between'
+    },
+
+    logo: {
+      boxSize: 'B1'
+    }
+  }
+
   return (
     <div className={setClass(props)}>
       <header className={setClass(props.header)}>
