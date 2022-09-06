@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@symbo.ls/init": "^1.0.6",
+    "@symbo.ls/react-box": "^1.1.0",
+    "@symbo.ls/scratch": "^0.3.30",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
