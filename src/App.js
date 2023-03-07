@@ -1,12 +1,12 @@
 
 import logo from './logo.svg';
-import { Box, Img, SymbolsProvider, Button, SymbolsContext } from '@symbo.ls/react'
+import { Box, Img, SymbolsProvider, SymbolsContext } from '@symbo.ls/react'
 import { useContext } from 'react'
 
 const editor = {
   remote: true,
   async: true,
-  // serviceRoute: 'state',
+  serviceRoute: 'state',
   endpoint: 'api.symbols.dev'
 }
 
