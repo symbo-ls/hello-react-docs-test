@@ -1,12 +1,12 @@
 
 import logo from './logo.svg';
-import { Box, Img, SymbolsProvider, SymbolsContext } from '@symbo.ls/react'
+import { Box, Img, SymbolsProvider, Button, SymbolsContext } from '@symbo.ls/react'
 import { useContext } from 'react'
 
 const editor = {
   remote: true,
   async: true,
-  serviceRoute: 'state',
+  // serviceRoute: 'state',
   endpoint: 'api.symbols.dev'
 }
 
@@ -21,7 +21,10 @@ const designSystem = {
     document: {
       background: 'black',
       color: 'white'
-    }
+    },
+  },
+  color: {
+    britishBlue: '#0A4C8B',
   }
 }
 
@@ -38,14 +41,11 @@ function App() {
   return (
     <SymbolsProvider appKey="byld.symbo.ls" editor={editor} designSystem={designSystem}>
       <div className="App">
-        <Header></Header>
+        <Header/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        {/* <Button>
-          Learn React
-        </Button> */}
-        <Box background="red">
+        <Box background="britishBlue" padding="A B" round="A">
           Learn React
         </Box>
       </div>
