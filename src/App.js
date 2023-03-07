@@ -1,6 +1,14 @@
 
-// import logo from './logo.svg';
-import { Box, SymbolsProvider } from '@symbo.ls/react'
+import logo from './logo.svg';
+import { Box, Img, SymbolsProvider, SymbolsContext } from '@symbo.ls/react'
+import { useContext } from 'react'
+
+const editor = {
+  remote: true,
+  async: true,
+  serviceRoute: 'state',
+  endpoint: 'api.symbols.dev'
+}
 
 const designSystem = {
   useReset: true,
@@ -17,11 +25,20 @@ const designSystem = {
   }
 }
 
+const Header = () => {
+  const { state } = useContext(SymbolsContext)
+  console.log(state)
+  return <>
+    <Img src={logo} />
+    <h1>{state?.main?.title}</h1>
+  </>
+}
+
 function App() {
   return (
-    <SymbolsProvider designSystem={designSystem}>
+    <SymbolsProvider appKey="byld.symbo.ls" editor={editor} designSystem={designSystem}>
       <div className="App">
-        {/* <Img src={logo} /> */}
+        <Header></Header>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
