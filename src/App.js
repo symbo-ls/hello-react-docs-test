@@ -11,12 +11,6 @@ const editor = {
 }
 
 const designSystem = {
-  useReset: true,
-  useSvgSprite: true,
-  useFontImport: true,
-  useIconSprite: true,
-  globalTheme: true,
-  useDocumentTheme: true,
   theme: {
     document: {
       background: 'black',
