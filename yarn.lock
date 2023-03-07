@@ -3171,9 +3171,9 @@
     "@symbo.ls/react-atoms" latest
 
 "@symbo.ls/react-provider@latest":
-  version "2.10.145"
-  resolved "https://registry.yarnpkg.com/@symbo.ls/react-provider/-/react-provider-2.10.145.tgz#408abd5f008c8fbf59b78f07c1dc2f0ebbf7ed6e"
-  integrity sha512-qpFQgcc9uQEiqdDgMywF3PDAJzt4CuJnpX60MuQCKfNZdp9B99d+Om0fCgi0L1TvasZsb+03vKZq8+lP1BKphg==
+  version "2.10.146"
+  resolved "https://registry.yarnpkg.com/@symbo.ls/react-provider/-/react-provider-2.10.146.tgz#5289fe3789383c785bbb7c2db70afd312ad3538f"
+  integrity sha512-BF/EYY5W6xoyiclsW+pjB2dQao/Gwp/hOUMxykBImB2zZGN533SKEH8UIZZP1X1Qea7w7E5gz1K+f5CVm3pCiA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@symbo.ls/default-config" latest
@@ -3237,9 +3237,9 @@
     "@symbo.ls/socket" latest
 
 "@symbo.ls/socket@latest":
-  version "2.10.135"
-  resolved "https://registry.yarnpkg.com/@symbo.ls/socket/-/socket-2.10.135.tgz#0aec04a3d23de07d3e00ef73b92eeaf9229ab6b0"
-  integrity sha512-j335RvF65ofZFx6MCzYonCgFyv7B4Xaw2VsCv9PEyKxSNLq6bsJACsKG4UXnEmiRS/LW8rpj4ss4mg79EoRdww==
+  version "2.10.146"
+  resolved "https://registry.yarnpkg.com/@symbo.ls/socket/-/socket-2.10.146.tgz#30ebc57332ebec36fe30dbf59faeb77713bd31ac"
+  integrity sha512-zGdMjAvdyqycxJqQGtXPpS6AQvB0nYJJf2iVNUqLmXr5eTY8732rqihxeyXDDa3LZCSAS4rhjtQWJJDqtIzEzA==
   dependencies:
     "@domql/utils" latest
     express "^4.18.1"

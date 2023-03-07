@@ -37,6 +37,11 @@ const Header = () => {
   </>
 }
 
+const Squad = () => {
+  const { state } = useContext(SymbolsContext)
+  return state?.squad?.data.map(v => <h3>{v.name}</h3>)
+}
+
 function App() {
   return (
     <SymbolsProvider appKey="byld.symbo.ls" editor={editor} designSystem={designSystem}>
@@ -45,6 +50,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        
+        <Squad />
+        
         <Box background="britishBlue" padding="A B" round="A">
           Learn React
         </Box>
