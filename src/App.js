@@ -1,7 +1,6 @@
 
-import logo from './logo.svg';
-import { Box, Img, SymbolsProvider, SymbolsContext } from '@symbo.ls/react'
-import { useContext } from 'react'
+// import logo from './logo.svg';
+import { Box, SymbolsProvider, useGlobalTheme, useGlobalState } from '@symbo.ls/react'
 
 const editor = {
   remote: true,
@@ -11,10 +10,21 @@ const editor = {
 }
 
 const designSystem = {
+  globalTheme: 'dark',
   theme: {
     document: {
-      background: 'black',
-      color: 'white'
+      '@dark': {
+        background: 'black',
+        color: 'white'
+      },
+      '@light': {
+        background: 'white',
+        color: 'black'
+      },
+      '@sepia': {
+        background: 'brown',
+        color: 'white'
+      }
     },
   },
   color: {
@@ -23,24 +33,30 @@ const designSystem = {
 }
 
 const Header = () => {
-  const { state } = useContext(SymbolsContext)
-  console.log(state)
+  const [ globalTheme, setGlobalTheme ] = useGlobalTheme()
+  const state = useGlobalState()
+
   return <>
-    <Img src={logo} />
+    {/* <Img src={logo} /> */}
     <h1>{state?.main?.title}</h1>
+
+    <button onClick={() => {
+      setGlobalTheme(globalTheme === 'dark' ? 'light' : globalTheme === 'light' ? 'sepia' : 'dark')
+    }}>Switch theme from {globalTheme}</button>
   </>
 }
 
 const Squad = () => {
-  const { state } = useContext(SymbolsContext)
-  return state?.squad?.data.map(v => <h3>{v.name}</h3>)
+  const state = useGlobalState()
+  return state?.squad?.data.map((v, k) => <h3 key={k}>{v.name}</h3>)
 }
 
 function App() {
   return (
     <SymbolsProvider appKey="byld.symbo.ls" editor={editor} designSystem={designSystem}>
-      <div className="App">
+      <Box theme={`document`}>
         <Header/>
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -50,7 +66,7 @@ function App() {
         <Box background="britishBlue" padding="A B" round="A">
           Learn React
         </Box>
-      </div>
+      </Box>
     </SymbolsProvider>
   );
 }
