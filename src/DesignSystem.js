@@ -6,6 +6,9 @@ export const CustomDesignSystem = {
         appBackgroundColor: '#0C0C0C',
         buttonTitleWhite: '#FFF',
     },
+    gradient: {
+        actionButtonBackground: 'linear-gradient(90deg, #4A80A9, #F0626C)',
+    },
     theme: {},
     typography: {},
     space: {},
