@@ -4,6 +4,15 @@ import { SymbolsProvider } from '@symbo.ls/react'
 import { CustomDesignSystem } from './DesignSystem';
 
 function App() {
+
+  const AppContainer = () => {};
+
+  const Subtitle = () => {};
+
+  const DayAndNight = () => {};
+
+  const ClickToActionButton = () => {};
+
   return (
     <SymbolsProvider designSystem={CustomDesignSystem}>
     </SymbolsProvider>
