@@ -1,25 +1,11 @@
 // import Flex and Icon atoms https://www.docs.symbols.app/atoms/
 import { useEffect, useState } from 'react'
-import { SymbolsProvider, Text, Box, Button, Flex, Tooltip } from '@symbo.ls/react'
+import { SymbolsProvider, Text, Box, Button, Flex } from '@symbo.ls/react'
 
 // import newly created CustomDesignSystem
 import { CustomDesignSystem } from './DesignSystem'
 
-const clearCacheData = () => {
-  caches.keys().then((names) => {
-  names.forEach((name) => {
-    caches.delete(name)
-  })
-  })
-  console.log('Complete Cache Cleared')
-}
-
 function App() {
-  useEffect(() => {
-    clearCacheData()
-  }, [])
-
-  const [showtooltip, setShowtooltip] = useState(false)
 
   const AppContainer = () => {} // eslint-disable-line
 
@@ -45,11 +31,6 @@ function App() {
         <DayAndNight/>
         <ClickToActionButton/>
         <SecretButton/>
-        {
-          showtooltip ?
-            <Tooltip/>
-            : null
-        }
       </Flex>
     )
   }
@@ -135,14 +116,6 @@ function App() {
     )
   }
 
-  const showSecretTooltip = () => {
-    setShowtooltip(true)
-  }
-
-  const hideSecretTooltip = () => {
-    setShowtooltip(false)
-  }
-
   const SecretButton = () => {
     const containerStyleProps = {
       position: 'absolute',
@@ -151,18 +124,17 @@ function App() {
     }
 
     return(
-      <>
+      <Box
+        {...containerStyleProps}
+      >
         <Button
-          onMouseOver={showSecretTooltip}
-          onMouseOut={hideSecretTooltip}
-          {...containerStyleProps}
           boxSizing="content-box"
           background={'inherit'}
           icon={'moon'}
           name={'moon'}
           color={'hintIconGray'}
         />
-      </>
+      </Box>
     )
   }
 
