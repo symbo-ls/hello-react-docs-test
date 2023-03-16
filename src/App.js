@@ -1,24 +1,27 @@
 // import Flex and Icon atoms https://www.docs.symbols.app/atoms/
-import { SymbolsProvider, Text, Box, Button, Flex, Icon, Tooltip } from '@symbo.ls/react'
 import { useEffect, useState } from 'react';
+import { SymbolsProvider, Text, Box, Button, Flex, Tooltip } from '@symbo.ls/react'
 
 // import newly created CustomDesignSystem
 import { CustomDesignSystem } from './DesignSystem';
 
+const clearCacheData = () => {
+  caches.keys().then((names) => {
+  names.forEach((name) => {
+    caches.delete(name);
+  });
+  });
+  console.log('Complete Cache Cleared')
+};
+
 function App() {
+  useEffect(() => {
+    clearCacheData();
+  }, []);
 
   const [showtooltip, setShowtooltip] = useState(false);
 
-  const clearCacheData = () => {
-    caches.keys().then((names) => {
-    names.forEach((name) => {
-      caches.delete(name);
-    });
-    });
-    console.log('Complete Cache Cleared')
-  };
-
-  const AppContainer = () => {};
+  const AppContainer = () => {}; // eslint-disable-line
 
   const SunComponent = (props) => {
     const flexProps = {
@@ -174,10 +177,6 @@ function App() {
       </>
     )
   };
-
-  useEffect(() => {
-    clearCacheData();
-  }, []);
 
   return (
     <SymbolsProvider designSystem={CustomDesignSystem}>
