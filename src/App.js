@@ -1,45 +1,43 @@
 // import Flex and Icon atoms https://www.docs.symbols.app/atoms/
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 import { SymbolsProvider, Text, Box, Button, Flex, Tooltip } from '@symbo.ls/react'
 
 // import newly created CustomDesignSystem
-import { CustomDesignSystem } from './DesignSystem';
+import { CustomDesignSystem } from './DesignSystem'
 
 const clearCacheData = () => {
   caches.keys().then((names) => {
   names.forEach((name) => {
-    caches.delete(name);
-  });
-  });
+    caches.delete(name)
+  })
+  })
   console.log('Complete Cache Cleared')
-};
+}
 
 function App() {
   useEffect(() => {
-    clearCacheData();
-  }, []);
+    clearCacheData()
+  }, [])
 
-  const [showtooltip, setShowtooltip] = useState(false);
+  const [showtooltip, setShowtooltip] = useState(false)
 
-  const AppContainer = () => {}; // eslint-disable-line
+  const AppContainer = () => {} // eslint-disable-line
 
   const SunComponent = (props) => {
     const flexProps = {
       flexDirection: 'column',
-      // alignItems: 'center',
-    };
+    }
 
     const containerStyle = {
       justifyContent: 'space-between',
       position: 'relative',
-    };
+    }
 
     return(
       <Flex
         {...flexProps}
         {...containerStyle}
         background={'sunCardBackground'}
-        // height={'179px'}
         width={'363px'}
         padding={'16px 12px 22px 26px'}
         borderRadius={'21px'}
@@ -54,12 +52,12 @@ function App() {
         }
       </Flex>
     )
-  };
+  }
 
   const Subtitle = (props) => {
     const flexProps = {
       flexDirection: 'column'
-    };
+    }
 
     return(
       <Flex
@@ -80,13 +78,13 @@ function App() {
           Hello
         </Box>
       </Flex>
-    );
-  };
+    )
+  }
 
   const DayAndNight = (props) => {
     const flexProps = {
       flexDirection: 'row',
-    };
+    }
 
     return(
       <Flex
@@ -98,14 +96,11 @@ function App() {
         <Subtitle/>
         <Flex
           {...flexProps}
-          gap={'6px'}
           alignItems={'center'}
         >
           <Button
             boxSizing="content-box"
             background={'inherit'}
-            height={'36px'}
-            width={'36px'}
             icon={'sun'}
             name={'sun'}
             color={'themeIconYellow'}
@@ -113,27 +108,22 @@ function App() {
           <Button
             boxSizing="content-box"
             background={'inherit'}
-            height={'36px'}
-            width={'36px'}
-            style={{fill: 'pink'}}
             name={'moon'}
             color={'themeIconYellow'}
           />
         </Flex>
       </Flex>
-    );
-  };
+    )
+  }
 
   const ClickToActionButton = () => {
     return(
       <Button
         icon={null}
         height={'28px'}
-        padding={'8px'}
+        padding={'10px 14px'}
         width={'fit-content'}
         background={'actionButtonBackground'}
-        // Props below will be inherited by TEXT atom
-        // textAlign={'center'}
         color={'buttonTitleWhite'}
         fontFamily={"Avenir"}
         fontWeight={"300"}
@@ -143,14 +133,14 @@ function App() {
         />
       </Button>
     )
-  };
+  }
 
   const showSecretTooltip = () => {
-    setShowtooltip(true);
-  };
+    setShowtooltip(true)
+  }
 
   const hideSecretTooltip = () => {
-    setShowtooltip(false);
+    setShowtooltip(false)
   }
 
   const SecretButton = () => {
@@ -158,7 +148,7 @@ function App() {
       position: 'absolute',
       bottom: '0',
       right: '0',
-    };
+    }
 
     return(
       <>
@@ -166,8 +156,6 @@ function App() {
           onMouseOver={showSecretTooltip}
           onMouseOut={hideSecretTooltip}
           {...containerStyleProps}
-          height={'A'}
-          width={'A'}
           boxSizing="content-box"
           background={'inherit'}
           icon={'moon'}
@@ -176,7 +164,7 @@ function App() {
         />
       </>
     )
-  };
+  }
 
   return (
     <SymbolsProvider designSystem={CustomDesignSystem}>
@@ -187,12 +175,11 @@ function App() {
         alignItems={'center'}
         justifyContent={'center'}
         padding={'32px'}
-        // style={ {'svg *': { fill: 'currentColor' } }}
       >
-        <SunComponent/>
+        <SunComponent />
       </Flex>
     </SymbolsProvider>
-  );
+  )
 }
 
-export default App;
+export default App
