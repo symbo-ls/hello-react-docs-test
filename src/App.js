@@ -5,19 +5,7 @@ import { SymbolsProvider, Text, Box, Button, Flex, Tooltip } from '@symbo.ls/rea
 // import newly created CustomDesignSystem
 import { CustomDesignSystem } from './DesignSystem'
 
-const clearCacheData = () => {
-  caches.keys().then((names) => {
-  names.forEach((name) => {
-    caches.delete(name)
-  })
-  })
-  console.log('Complete Cache Cleared')
-}
-
 function App() {
-  useEffect(() => {
-    clearCacheData()
-  }, [])
 
   const [showtooltip, setShowtooltip] = useState(false)
 
@@ -45,11 +33,6 @@ function App() {
         <DayAndNight/>
         <ClickToActionButton/>
         <SecretButton/>
-        {
-          showtooltip ?
-            <Tooltip/>
-            : null
-        }
       </Flex>
     )
   }
@@ -151,18 +134,33 @@ function App() {
     }
 
     return(
-      <>
+      <Box
+        {...containerStyleProps}
+      >
         <Button
           onMouseOver={showSecretTooltip}
           onMouseOut={hideSecretTooltip}
-          {...containerStyleProps}
           boxSizing="content-box"
           background={'inherit'}
           icon={'moon'}
           name={'moon'}
           color={'hintIconGray'}
         />
-      </>
+        {
+          showtooltip ?
+            <Tooltip
+              containerProps={{
+                width: 'max-content',
+                height: 'max-content',
+                position: 'absolute',
+                top: '100%',
+                left: '50%',
+                transform: 'translateX(-50%)',
+              }}
+            />
+            : null
+        }
+      </Box>
     )
   }
 

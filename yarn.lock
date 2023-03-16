@@ -2187,9 +2187,9 @@
     "@emotion/css" "^11.10.0"
 
 "@symbo.ls/create@latest":
-  version "2.10.188"
-  resolved "https://registry.yarnpkg.com/@symbo.ls/create/-/create-2.10.188.tgz#8b8d31da3ed120202777addba0043627cbd911f3"
-  integrity sha512-XLNCDWG1CHK6YgQQDoMNOKS9gXA+c8rbi2tNVxg2DQeAA5ihzeJbUW7JgwJwV4qN/akcWZZWimKN+iKSpAzUYA==
+  version "2.10.210"
+  resolved "https://registry.yarnpkg.com/@symbo.ls/create/-/create-2.10.210.tgz#32d189e55679e29a0036e01bcdda0a9cbe891939"
+  integrity sha512-vg1EzRGnAPImNjhUWjICCFLWvy7w0an/CsYW8YVTDHDVyuMvfeDgXEMqQe0DXcZhQCZs243PxtpNgWMlH89FTw==
   dependencies:
     "@domql/cookie" latest
     "@domql/emotion" latest
@@ -2398,9 +2398,9 @@
     "@symbo.ls/init" latest
 
 "@symbo.ls/react-tooltip@latest":
-  version "2.10.208"
-  resolved "https://registry.yarnpkg.com/@symbo.ls/react-tooltip/-/react-tooltip-2.10.208.tgz#4e5615d461fbc4a10b6701f6d7163368652980ab"
-  integrity sha512-3ILPizcVXln31JrF7XPNlaq8rSICt25BDCDYH1apXa4X7pbLmhuvlxsenx02UOX9O9AcF1qZn0LOpHGRQICaqw==
+  version "2.10.213"
+  resolved "https://registry.yarnpkg.com/@symbo.ls/react-tooltip/-/react-tooltip-2.10.213.tgz#541c79ee8a5ab3b4e6304c4848a4bb08ddaf3636"
+  integrity sha512-epo281GYTRn0BLDM0FXY49kFBw66vJJBInzL1BaZpVRp8eAc3SkYVm/wsqckmsFYcdMjm8I9G+nwEixbk2Tgcw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@symbo.ls/icon-text" latest
@@ -2422,9 +2422,9 @@
     smbls latest
 
 "@symbo.ls/scratch@latest":
-  version "2.10.198"
-  resolved "https://registry.yarnpkg.com/@symbo.ls/scratch/-/scratch-2.10.198.tgz#130baa2180d3e5b088120f2ce49ff682a72c1017"
-  integrity sha512-j6OjEegmcbHTuF/yRoT2mL+rGQYhBo1Q6lebCdozOpwBETBPKIYrFS46n946H/ljWW9TocNJUOqx5cEnPE2kuw==
+  version "2.10.212"
+  resolved "https://registry.yarnpkg.com/@symbo.ls/scratch/-/scratch-2.10.212.tgz#174de5092511017d3dea7a933d18f9395df63966"
+  integrity sha512-6sAwUHiicFHximUx9MqYkH1k4QIN+3QiDHddcAmXkVaR8XgJWoWMBi5LFzrzjIx5g+VYyQR7QlY65Gw+6RhDdA==
   dependencies:
     "@domql/utils" latest
     "@symbo.ls/utils" latest
@@ -2767,9 +2767,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/jest@*":
-  version "29.4.4"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.4.4.tgz#ba257bd7b1876dec9e0b4fb82fa60eec5505e5f1"
-  integrity sha512-qezb65VIH7X1wobSnd6Lvdve7PXSyQRa3dljTkhTtDhi603RvHQCshSlJcuyMLHJpeHgY3NKwvDJWxMOOHxGDQ==
+  version "29.5.0"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.0.tgz#337b90bbcfe42158f39c2fb5619ad044bbb518ac"
+  integrity sha512-3Emr5VOl/aoBwnWcH/EFQvlSAmjV+XtV9GGu5mwdYew5vhQh0IUZx/60x0TzHDu09Bi7HMx10t/namdJw5QIcg==
   dependencies:
     expect "^29.0.0"
     pretty-format "^29.0.0"
@@ -4653,9 +4653,9 @@ domhandler@^4.0.0, domhandler@^4.2.0, domhandler@^4.3.1:
     domelementtype "^2.2.0"
 
 domql@latest:
-  version "1.5.125"
-  resolved "https://registry.yarnpkg.com/domql/-/domql-1.5.125.tgz#ca29eef82f02aa0bdb5298640e5008432738df56"
-  integrity sha512-FSaFHkFJDNc65yi1hJ5GOnVixvk9c+OFadGkIyHez/B1fV6zORJ6IhMmT6H0iZcTnemb003EDo2hWxHDkHMcKQ==
+  version "1.5.126"
+  resolved "https://registry.yarnpkg.com/domql/-/domql-1.5.126.tgz#f15778ca5123ceea85f2e03ac659e70ad89b929d"
+  integrity sha512-eadB/kRya5T64lRsr0o2CNlCPdVMhISp9PmDCKNGc681nxrb8UtwMV8cJmlnTddYKxFrDkktnJgKu4LL6HCvTA==
   dependencies:
     "@domql/classlist" latest
     "@domql/emotion" latest
@@ -4718,9 +4718,9 @@ ejs@^3.1.6:
     jake "^10.8.5"
 
 electron-to-chromium@^1.4.284:
-  version "1.4.331"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.331.tgz#c8ea823968563ef2cbb3495233e9e16c48c54a4a"
-  integrity sha512-tdtr9y9oJl8VDiS+HeB6e/JDJqdDGjIk3yRfEMHm5rDnWQ/D5SbafybAayInxolbfbH6pouV5g7ZUAwE/WVtHw==
+  version "1.4.332"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.332.tgz#b981fcf61587abe03c24b301b2cfbdcc2b70e8a5"
+  integrity sha512-c1Vbv5tuUlBFp0mb3mCIjw+REEsgthRgNE8BlbEDKmvzb8rxjcVki6OkQP83vLN34s0XCxpSkq7AZNep1a6xhw==
 
 emittery@^0.10.2:
   version "0.10.2"
@@ -7403,9 +7403,9 @@ min-indent@^1.0.0:
   integrity sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
 
 mini-css-extract-plugin@^2.4.5:
-  version "2.7.3"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.7.3.tgz#794aa4d598bf178a66b2a35fe287c3df3eac394e"
-  integrity sha512-CD9cXeKeXLcnMw8FZdtfrRrLaM7gwCl4nKuKn2YkY2Bw5wdlB8zU2cCzw+w2zS9RFvbrufTBkMCJACNPwqQA0w==
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.7.4.tgz#1e92eaafb0dd598d36b68b699ac553ae4d52ae60"
+  integrity sha512-V5zkjajQx9gnedglDap7ZjD1mNFNISzyllzrc+9+R4iwPRUAR0St20ADflQbWkVUQ2u/QU55t8mKaxUek8Cciw==
   dependencies:
     schema-utils "^4.0.0"
 
