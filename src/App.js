@@ -118,10 +118,15 @@ function App() {
 
   const ClickToActionButton = () => {
 
-    console.log('global theme');
+    const mediaVariableQuery = {
+      '@normalMobile': {
+        width: 'max-content',
+      },
+    };
 
     return(
       <Button
+        {...mediaVariableQuery}
         icon={null}
         height={'28px'}
         padding={'10px 14px'}
