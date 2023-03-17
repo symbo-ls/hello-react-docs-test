@@ -2,6 +2,7 @@ import AvenirRegular from './assets/fonts/AvenirNextLTPro-Regular.otf'
 import AvenirBold from './assets/fonts/AvenirNextLTPro-Bold.otf'
 
 export const CustomDesignSystem = {
+    globalTheme: 'dark',
     color: {
         appBackgroundColor: 'rgba(12, 12, 12, 0.95)',
         buttonTitleWhite: '#FFF',
@@ -14,7 +15,22 @@ export const CustomDesignSystem = {
     gradient: {
         actionButtonBackground: 'linear-gradient(90deg, #4A80A9, #F0626C)',
     },
-    theme: {},
+    theme: {
+        document: {
+            '@dark': {
+                background: 'black',
+                color: 'white'
+            },
+            '@light': {
+                background: 'white',
+                color: 'black'
+            },
+            '@sepia': {
+                background: 'brown',
+                color: 'white'
+            }
+        },
+    },
     typography: {},
     space: {},
     media: {},

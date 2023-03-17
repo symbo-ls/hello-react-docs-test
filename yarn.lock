@@ -2371,9 +2371,9 @@
     "@symbo.ls/react-icon-text" latest
 
 "@symbo.ls/react-icon-text@latest":
-  version "2.10.208"
-  resolved "https://registry.yarnpkg.com/@symbo.ls/react-icon-text/-/react-icon-text-2.10.208.tgz#9f60b8deb29134ce8ae48fa5fdebd00084d6ebbf"
-  integrity sha512-SpFOjd0P7Btx6NbDEy808pbBwmW3VEqEO/pIHzwChthN/Tsw60CjcN/cI0xp6+C6vqZZT3p9cmWd3iV2sQ2YJw==
+  version "2.10.219"
+  resolved "https://registry.yarnpkg.com/@symbo.ls/react-icon-text/-/react-icon-text-2.10.219.tgz#b6e4c35b4a2d85d9d47ad72a6124e481eb9ccc3e"
+  integrity sha512-tZgOQvMCaYcXYtvKhdrTHfR403M/DurjnMoG1BTQk+uYDK4jaIQUnmYMdgMh6IWfnosGx3U3YoWuIVoujdN6Bw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@symbo.ls/icon-text" latest
@@ -2381,17 +2381,17 @@
     "@symbo.ls/react-icon" latest
 
 "@symbo.ls/react-icon@latest":
-  version "2.10.188"
-  resolved "https://registry.yarnpkg.com/@symbo.ls/react-icon/-/react-icon-2.10.188.tgz#a9a7124afb8e154ba6de1a84922e987ecbeaf919"
-  integrity sha512-aTuCPKj5xnGU+HaM5M9nu51yI93CBfSn1OrLlDPFZI5w5/7DChiqZ1KO2waDmJMhO2dTurIbkxxsErbKgY15Rg==
+  version "2.10.219"
+  resolved "https://registry.yarnpkg.com/@symbo.ls/react-icon/-/react-icon-2.10.219.tgz#e58f512f726dfb71e53db4e6de61441acafdac7b"
+  integrity sha512-47yuBbeJ7rwGoXCtRgiugwU3/3uMoCd0/cXaxNabI1P9OTWT1DVkEXXOIedrUEzfOkD3/sjFz7qbbxeq40fUNA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@symbo.ls/react-atoms" latest
 
 "@symbo.ls/react-provider@latest":
-  version "2.10.188"
-  resolved "https://registry.yarnpkg.com/@symbo.ls/react-provider/-/react-provider-2.10.188.tgz#175711a13234505e7717def28cf065fa8bf25047"
-  integrity sha512-p9vPrdz1P4vPS5qvRwUK4h/lFfg9Rd3Wdi9jcn+ezRbeTyI5DDjcpOeR5NINlGS87EZ5IpkEopdqCaGCCrUjzQ==
+  version "2.10.218"
+  resolved "https://registry.yarnpkg.com/@symbo.ls/react-provider/-/react-provider-2.10.218.tgz#70650645333e02c4d9427ab8f797aa5f7772f8cf"
+  integrity sha512-mB7SeVxy8Ba4r8JdDu+rOT1F9AFLMVTwsOiwZaCZb2Bpjf9hjuFAjUyZYDBaj1RfR1f+P1kxyqseqTq4M7wZqg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@symbo.ls/default-config" latest
@@ -4463,9 +4463,9 @@ deep-is@^0.1.3, deep-is@~0.1.3:
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
 
 deepmerge@^4.2.2:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.3.0.tgz#65491893ec47756d44719ae520e0e2609233b59b"
-  integrity sha512-z2wJZXrmeHdvYJp/Ux55wIjqo81G5Bp4c+oELTW+7ar6SogWHajt5a9gO3s3IDaGSAXjDk0vlQKN3rms8ab3og==
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.3.1.tgz#44b5f2147cd3b00d4b56137685966f26fd25dd4a"
+  integrity sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==
 
 default-gateway@^6.0.3:
   version "6.0.3"
@@ -5744,9 +5744,9 @@ gopd@^1.0.1:
     get-intrinsic "^1.1.3"
 
 graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.6, graceful-fs@^4.2.9:
-  version "4.2.10"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
-  integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
+  version "4.2.11"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
+  integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
 grapheme-splitter@^1.0.4:
   version "1.0.4"
@@ -7403,9 +7403,9 @@ min-indent@^1.0.0:
   integrity sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
 
 mini-css-extract-plugin@^2.4.5:
-  version "2.7.4"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.7.4.tgz#1e92eaafb0dd598d36b68b699ac553ae4d52ae60"
-  integrity sha512-V5zkjajQx9gnedglDap7ZjD1mNFNISzyllzrc+9+R4iwPRUAR0St20ADflQbWkVUQ2u/QU55t8mKaxUek8Cciw==
+  version "2.7.5"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.7.5.tgz#afbb344977659ec0f1f6e050c7aea456b121cfc5"
+  integrity sha512-9HaR++0mlgom81s95vvNjxkg52n2b5s//3ZTI1EtzFb98awsLSivs2LMsVqnQ3ay0PVhqWcGNyDaTE961FOcjQ==
   dependencies:
     schema-utils "^4.0.0"
 

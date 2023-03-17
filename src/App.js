@@ -1,12 +1,14 @@
 // import Flex and Icon atoms https://www.docs.symbols.app/atoms/
 import { useEffect, useState } from 'react'
-import { SymbolsProvider, Text, Box, Button, Flex, Tooltip } from '@symbo.ls/react'
+// import useGlobalTheme hook!
+import { SymbolsProvider, useGlobalTheme, Text, Box, Button, Flex, Tooltip } from '@symbo.ls/react'
 
 // import newly created CustomDesignSystem
 import { CustomDesignSystem } from './DesignSystem'
 
 function App() {
 
+  const [ globalTheme, setGlobalTheme ] = useGlobalTheme()
   const [showtooltip, setShowtooltip] = useState(false)
 
   const AppContainer = () => {} // eslint-disable-line
@@ -64,6 +66,14 @@ function App() {
     )
   }
 
+  const changeThemeToLight = () => {
+    setGlobalTheme('light');
+  }
+
+  const changeThemeToDark = () => {
+    setGlobalTheme('dark');
+  }
+
   const DayAndNight = (props) => {
     const flexProps = {
       flexDirection: 'row',
@@ -82,16 +92,23 @@ function App() {
           alignItems={'center'}
         >
           <Button
+            onClick={changeThemeToLight}
             boxSizing="content-box"
             background={'inherit'}
             icon={'sun'}
-            name={'sun'}
+            iconModifier={
+              globalTheme === 'light' ? '' : 'Outline'
+            }
             color={'themeIconYellow'}
           />
           <Button
+            onClick={changeThemeToDark}
             boxSizing="content-box"
             background={'inherit'}
-            name={'moon'}
+            icon={'moon'}
+            iconModifier={
+              globalTheme === 'dark' ? '' : 'Outline'
+            }
             color={'themeIconYellow'}
           />
         </Flex>
@@ -100,6 +117,9 @@ function App() {
   }
 
   const ClickToActionButton = () => {
+
+    console.log('global theme');
+
     return(
       <Button
         icon={null}
@@ -112,7 +132,7 @@ function App() {
         fontWeight={"300"}
       >
         <Text
-          text={"Click to action"}
+          text={"Click to action "}
         />
       </Button>
     )
