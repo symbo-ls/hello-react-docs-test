@@ -31,8 +31,19 @@ export const CustomDesignSystem = {
             }
         },
     },
-    typography: {},
-    space: {},
+    typography: {
+        base: 16,
+        default: 16,
+        ratio: 1.067,
+        subSequence: true,
+        range: [-6, +18]
+    },
+    space: {
+        base: 16,
+        ratio: 1.618,
+        subSequence: true,
+        range: [-5, +18]
+    },
     media: {
         mobile: '(max-width: 768px)',
     },

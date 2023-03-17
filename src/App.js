@@ -29,8 +29,8 @@ function App() {
         {...containerStyle}
         background={'sunCardBackground'}
         width={'363px'}
-        padding={'16px 12px 22px 26px'}
-        borderRadius={'21px'}
+        padding={'A Z1 A2 B'}
+        borderRadius={'A2'} // was 21 now 22
       >
         <DayAndNight/>
         <ClickToActionButton/>
@@ -84,7 +84,7 @@ function App() {
         {...flexProps}
         alignItems={'flex-start'}
         justifyContent={'space-between'}
-        margin={'0 0 40px 0'}
+        margin={'0 0 C 0'} // was 40 now 42
       >
         <Subtitle/>
         <Flex
@@ -128,11 +128,12 @@ function App() {
       <Button
         {...mediaVariableQuery}
         icon={null}
-        height={'28px'}
-        padding={'10px 14px'}
+        height={'B1'} // was 28 px now its 32px
+        padding={'Z Z2'}
         width={'fit-content'}
         background={'actionButtonBackground'}
         color={'buttonTitleWhite'}
+        fontSize={'Y'}
         fontFamily={"Avenir"}
         fontWeight={"300"}
       >
@@ -158,6 +159,20 @@ function App() {
       right: '0',
     }
 
+    const tooltipProps = {
+      width: 'max-content',
+      height: 'max-content',
+      position: 'absolute',
+      top: '100%',
+      left: '50%',
+      transform: 'translateX(-50%)',
+    }
+
+    const tooltipTitleProps = {
+      fontSize: 'X',
+      color: 'red',
+    };
+
     return(
       <Box
         {...containerStyleProps}
@@ -174,14 +189,8 @@ function App() {
         {
           showtooltip ?
             <Tooltip
-              containerProps={{
-                width: 'max-content',
-                height: 'max-content',
-                position: 'absolute',
-                top: '100%',
-                left: '50%',
-                transform: 'translateX(-50%)',
-              }}
+              containerProps={tooltipProps}
+              titleProps={tooltipTitleProps}
             />
             : null
         }
@@ -197,7 +206,7 @@ function App() {
         height={'100%'}
         alignItems={'center'}
         justifyContent={'center'}
-        padding={'32px'}
+        padding={'B2'}
       >
         <SunComponent />
       </Flex>
