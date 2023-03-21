@@ -1,14 +1,19 @@
-// import Flex and Icon atoms https://www.docs.symbols.app/atoms/
 import { useEffect, useState } from 'react'
-// import useGlobalTheme hook!
 import { SymbolsProvider, useGlobalTheme, Text, Box, Button, Flex, Tooltip } from '@symbo.ls/react'
 
-// import newly created CustomDesignSystem
 import { CustomDesignSystem } from './DesignSystem'
 
-function App() {
+const clearCacheData = () => {
+  caches.keys().then((names) => {
+    names.forEach((name) => {
+      caches.delete(name)
+    })
+  })
+  console.log('Complete Cache Cleared')
+}
 
-  const [ globalTheme, setGlobalTheme ] = useGlobalTheme()
+function App() {
+  const [ setGlobalTheme ] = useGlobalTheme()
   const [showtooltip, setShowtooltip] = useState(false)
 
   const AppContainer = () => {} // eslint-disable-line
@@ -96,9 +101,6 @@ function App() {
             boxSizing="content-box"
             background={'inherit'}
             icon={'sun'}
-            iconModifier={
-              globalTheme === 'light' ? '' : 'Outline'
-            }
             color={'themeIconYellow'}
           />
           <Button
@@ -106,9 +108,6 @@ function App() {
             boxSizing="content-box"
             background={'inherit'}
             icon={'moon'}
-            iconModifier={
-              globalTheme === 'dark' ? '' : 'Outline'
-            }
             color={'themeIconYellow'}
           />
         </Flex>
@@ -117,9 +116,10 @@ function App() {
   }
 
   const ClickToActionButton = () => {
-
     const mediaVariableQuery = {
-      '@normalMobile': {
+      '@mobile': {
+        background: 'red',
+        fontSize: 'D',
         width: 'max-content',
       },
     };
@@ -188,6 +188,8 @@ function App() {
       </Box>
     )
   }
+
+  useEffect(() => clearCacheData(), [])
 
   return (
     <SymbolsProvider designSystem={CustomDesignSystem}>
