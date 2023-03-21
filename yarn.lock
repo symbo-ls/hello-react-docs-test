@@ -2272,9 +2272,9 @@
     "@symbo.ls/text" latest
 
 "@symbo.ls/icon@latest":
-  version "2.10.188"
-  resolved "https://registry.npmjs.org/@symbo.ls/icon/-/icon-2.10.188.tgz#642cf22570ff632dbe92df60b16a2ba0b888f554"
-  integrity sha512-wJYCkT5Qwi2xBqaYrBjwfj+6BVmDdP4ujy4itqlT2/VjeCimeuTojTr/M5Lp4Bd9pDyIc6ddsjucyCdbVn7w5g==
+  version "2.10.222"
+  resolved "https://registry.npmjs.org/@symbo.ls/icon/-/icon-2.10.222.tgz#f7c3d38fb4c4ec3d51d7816524ec18015a2c6645"
+  integrity sha512-fDXksIOCglT0iXd8sDpecdFe2qy61k57ZbUaxRxypG4iHP0uBEAw1sA1ANsMSAZP1OT+LivkvRZkb/TsYW5XMA==
   dependencies:
     "@symbo.ls/svg" latest
     "@symbo.ls/utils" latest
@@ -2342,9 +2342,9 @@
     "@symbo.ls/scratch" latest
 
 "@symbo.ls/react-atoms@latest":
-  version "2.10.221"
-  resolved "https://registry.npmjs.org/@symbo.ls/react-atoms/-/react-atoms-2.10.221.tgz#5796c415dbdd74431e59787a4cde5637e712e65f"
-  integrity sha512-ORebtgofh3FJ/wzRBVGJc5JAv0g7ljFr5WWRP6MgVkf9UO7Iv8qd07Q/ohG6QoLhwHdbtIFbFLHruJpPu2vQ5g==
+  version "2.10.222"
+  resolved "https://registry.npmjs.org/@symbo.ls/react-atoms/-/react-atoms-2.10.222.tgz#093e4211c76746273c4542784b6f7e745a067bd2"
+  integrity sha512-LaRZ8FX6oOF0JfT2Ck8Q4ChqEuByiPzIl+e7n0PRANnMgzidIwTvLrB7uWpQf7XudFxciNphiGuRTuncjLLAdQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@symbo.ls/atoms" latest
@@ -2352,9 +2352,9 @@
     css-in-props latest
 
 "@symbo.ls/react-box@latest":
-  version "2.10.220"
-  resolved "https://registry.npmjs.org/@symbo.ls/react-box/-/react-box-2.10.220.tgz#aafaef47a54b81f8064aaa42ea9ae6459ba9589d"
-  integrity sha512-s6R09wuywPRKtk5cpJSp57lzYPavGsYD/A/A1tvo0nXr0M8+4BxpkWMi6h52WY9IlO0536XDn/Jy6/vkkfP5eA==
+  version "2.10.222"
+  resolved "https://registry.npmjs.org/@symbo.ls/react-box/-/react-box-2.10.222.tgz#6333d9f60bd2678f1bab0341b404cbdde200dc67"
+  integrity sha512-tGnY0g6sCiSpo0yg9TmjyQB9fqVL5ZGM0zXlwGAATC0YdrQbnmYL77T7VkBoSNRFP+9D7h5i+dQzCJDbxFgw1w==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@symbo.ls/react-provider" latest
@@ -2381,17 +2381,17 @@
     "@symbo.ls/react-icon" latest
 
 "@symbo.ls/react-icon@latest":
-  version "2.10.219"
-  resolved "https://registry.npmjs.org/@symbo.ls/react-icon/-/react-icon-2.10.219.tgz#e58f512f726dfb71e53db4e6de61441acafdac7b"
-  integrity sha512-47yuBbeJ7rwGoXCtRgiugwU3/3uMoCd0/cXaxNabI1P9OTWT1DVkEXXOIedrUEzfOkD3/sjFz7qbbxeq40fUNA==
+  version "2.10.222"
+  resolved "https://registry.npmjs.org/@symbo.ls/react-icon/-/react-icon-2.10.222.tgz#97a3ed5e45946e8857871168cfca97af9cbcf1f9"
+  integrity sha512-jFWfDudNAdVSiafsb5kWCcRi9GpreouH+sCKXjfErsK6uwCoVILSpDi9IXbwJW4NHpTU+aqLja5M/dy8rZkG4A==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@symbo.ls/react-atoms" latest
 
 "@symbo.ls/react-provider@latest":
-  version "2.10.218"
-  resolved "https://registry.npmjs.org/@symbo.ls/react-provider/-/react-provider-2.10.218.tgz#70650645333e02c4d9427ab8f797aa5f7772f8cf"
-  integrity sha512-mB7SeVxy8Ba4r8JdDu+rOT1F9AFLMVTwsOiwZaCZb2Bpjf9hjuFAjUyZYDBaj1RfR1f+P1kxyqseqTq4M7wZqg==
+  version "2.10.222"
+  resolved "https://registry.npmjs.org/@symbo.ls/react-provider/-/react-provider-2.10.222.tgz#27da080e9f05212b314657167f20cffc7555ee8f"
+  integrity sha512-quz5WPKgkRcsQM/k9U/e3MJ+1O1JD+nvu65a+HU3V/3S1MSGB4w5gKhenWafVNJBAqhZ2vQxfmTbXKEwN3oVmw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@symbo.ls/default-config" latest
@@ -4183,9 +4183,9 @@ css-has-pseudo@^3.0.4:
     postcss-selector-parser "^6.0.9"
 
 css-in-props@latest:
-  version "2.10.220"
-  resolved "https://registry.npmjs.org/css-in-props/-/css-in-props-2.10.220.tgz#00606878d27987aa2271ac70af50780569cc5833"
-  integrity sha512-eZ9DJSRApIgczCxcYlSInr8DvhNELdeg2xpkrAS1Z5dD3VGaGqTjb5sgMkEw2auJIHOkZorn1Fzh9XdcT+/G/A==
+  version "2.10.222"
+  resolved "https://registry.npmjs.org/css-in-props/-/css-in-props-2.10.222.tgz#c70b2805c4681312ab348d19404edfa1b70c4922"
+  integrity sha512-g0i623Pl5lWJmPROfI/vnvQzDJzTFa93bTqMGUSGF8KNIYqekXoTwv3T8X9Sn1maGXHH5pthsDLKzMJHxheccA==
   dependencies:
     "@domql/utils" latest
     "@symbo.ls/atoms" latest
